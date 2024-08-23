@@ -31,7 +31,8 @@ app.use(cookieParser())
 
 import cors from "cors"
 const corsData = {
-    origin: 'http://localhost:5173',
+    origin: true,
+    methods:["GET", "POST", "PUT", "DELETE"],
     credentials:true
 
 }
