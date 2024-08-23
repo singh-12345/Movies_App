@@ -29,6 +29,15 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
+import cors from "cors"
+const corsData = {
+    origin: 'http://localhost:5173',
+    credentials:true
+
+}
+
+app.use(cors(corsData));
+
 const PORT = process.env.PORT || 3000;
 
 // routes
