@@ -5,7 +5,7 @@
  import asyncHandler from "../middlewares/asyncHandler.js";
 
  import createToken from '../utils/createToken.js'
-import { useResolvedPath } from "react-router";
+i
 
 
  const createUser = asyncHandler(async (req,res) => {
